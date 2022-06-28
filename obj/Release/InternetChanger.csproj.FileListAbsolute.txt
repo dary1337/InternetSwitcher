@@ -1,0 +1,42 @@
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\bin\Release\InternetChanger.exe.config
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\bin\Release\InternetChanger.exe
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\bin\Release\InternetChanger.pdb
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.csproj.AssemblyReference.cache
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.csproj.SuggestedBindingRedirects.cache
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.Form1.resources
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.Properties.Resources.resources
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.csproj.GenerateResource.cache
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.csproj.CoreCompileInputs.cache
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.exe
+C:\Users\yuri\Desktop\Done projectd\Projects\InternetChanger\obj\Release\InternetChanger.pdb
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.csproj.SuggestedBindingRedirects.cache
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.Form1.resources
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.Properties.Resources.resources
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.csproj.GenerateResource.cache
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.csproj.CoreCompileInputs.cache
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\bin\Release\Internet Changer.exe.config
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\bin\Release\Internet Changer.exe
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\bin\Release\Internet Changer.pdb
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\Internet Changer.exe
+C:\Users\yuri\Desktop\Doned projects\Projects\InternetChanger\obj\Release\Internet Changer.pdb
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\bin\Release\Internet Changer.exe.config
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\bin\Release\Internet Changer.exe
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\bin\Release\Internet Changer.pdb
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.csproj.SuggestedBindingRedirects.cache
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.Form1.resources
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.Properties.Resources.resources
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.csproj.GenerateResource.cache
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\InternetChanger.csproj.CoreCompileInputs.cache
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\Internet Changer.exe
+C:\Users\yuri\Desktop\Projects\Doned projects\Projects\InternetChanger\obj\Release\Internet Changer.pdb
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetChanger.csproj.SuggestedBindingRedirects.cache
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetChanger.Form1.resources
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetChanger.csproj.GenerateResource.cache
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetChanger.csproj.CoreCompileInputs.cache
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetChanger.csproj.AssemblyReference.cache
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetSwitcher.Properties.Resources.resources
+C:\Users\yuri\Desktop\Projects\InternetChanger\bin\Release\Internet Switcher.exe.config
+C:\Users\yuri\Desktop\Projects\InternetChanger\bin\Release\Internet Switcher.exe
+C:\Users\yuri\Desktop\Projects\InternetChanger\bin\Release\Internet Switcher.pdb
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\Internet Switcher.exe
+C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\Internet Switcher.pdb
