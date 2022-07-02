@@ -33,10 +33,13 @@ namespace InternetSwitcher {
             var pref = EdgeSupport.DWMWCP.DWMWCP_ROUND;
             EdgeSupport.DwmSetWindowAttribute(Handle, EdgeSupport.DWMWA.DWMWA_WINDOW_CORNER_PREFERENCE, ref pref, sizeof(uint));
 
-            int dpi = ScreenResolution.scaleOfScreen; if (dpi != 100)
-                Font = new Font("Microsoft YaHei", (dpi > 100 && dpi <= 125) ? 8f : (dpi > 125 && dpi <= 150) ? 7f : 6f, FontStyle.Regular, GraphicsUnit.Point, 0);
 
-            Location = new Point(ScreenResolution.wWidth - 410, ScreenResolution.wHeight - 145);
+            ClientSize = new Size(a(390), a(80));
+
+            Graphics g = CreateGraphics();
+            AutoScaleDimensions = new SizeF(g.DpiX, g.DpiY);
+
+            Location = new Point(a(ScreenResolution.rWidth - 400), a(ScreenResolution.rHeight - 130));
 
 
             new List<Control> {
@@ -73,7 +76,7 @@ namespace InternetSwitcher {
                         });
                     } catch {
 
-                        label1.Text = dict.local["catch_"+lang];
+                        label1.Text = dict.local["catch_" + lang];
 
                         pictureBox1.Image = themeIsLight ? Resources.LightWarning : Resources.DarkWarning;
 
@@ -82,7 +85,7 @@ namespace InternetSwitcher {
                     }
                 }
 
-                async void Notification() {
+                async void notify() {
 
                     new SoundPlayer(Resources.Notify).Play();
                     await Task.Delay(3000);
@@ -114,7 +117,7 @@ namespace InternetSwitcher {
 
                         pictureBox1.Image = themeIsLight ? Resources.DarkError : Resources.LightError;
 
-                        Notification();
+                        notify();
                     }
                 } catch {
 
@@ -124,7 +127,7 @@ namespace InternetSwitcher {
 
                     pictureBox1.Image = themeIsLight ? Resources.Dark : Resources.Light;
 
-                    Notification();
+                    notify();
                 }
 
                 await Task.Delay(100);
@@ -138,8 +141,15 @@ namespace InternetSwitcher {
                 Close();
         }
 
-        async void Exit() {
+        int a(int i) {
 
+            if (ScreenResolution.scaleOfScreen == 100)
+                return i;
+
+            return i * ScreenResolution.scaleOfScreen / 100;
+        }
+
+        async void Exit() {
 
             while (Opacity != 0) { Opacity -= 0.2; await Task.Delay(20); }
 
