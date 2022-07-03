@@ -20,7 +20,7 @@ namespace InternetSwitcher {
 
             if (MessageBox.Show(dict.local["exp1_" + mainForm.lang] + e.Exception.ToString() + dict.local["exp2_" + mainForm.lang],
                 "Exception", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                Process.Start("https://github.com/dary1337/InternetChanger/issues");
+                    Process.Start("https://github.com/dary1337/InternetSwitcher/issues");
 
             Application.Exit();
         }
