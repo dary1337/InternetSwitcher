@@ -1,7 +1,6 @@
 ﻿using InternetSwitcher.Properties;
 using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -42,14 +41,14 @@ namespace InternetSwitcher {
             Location = new Point(a(ScreenResolution.rWidth - 400), a(ScreenResolution.rHeight - 130));
 
 
-            new List<Control> {
+            foreach (Control c in new Control[] {
 
                 this,
                 label1,
                 label3,
                 pictureBox1
-
-            }.ForEach(x => x.Click += (s, e) => Exit());
+            })
+                c.Click += (s, e) => Exit();
 
 
             if (Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Control\Nls\Language").GetValue("Default").ToString() != "0419")
@@ -65,36 +64,40 @@ namespace InternetSwitcher {
 
                 bool themeIsLight = true;
 
-                async void cmdline(string line) {
+                async void set(string l, string t, Bitmap b) {
+
+                    int a = 3000;
 
                     try {
 
                         Process.Start(new ProcessStartInfo() {
+
                             FileName = "cmd",
-                            Arguments = $@"/c {line} & exit",
+                            Arguments = $@"/c netsh interface set interface Ethernet {l} & exit",
                             WindowStyle = ProcessWindowStyle.Hidden
                         });
+
+                        label1.Text = t;
+
+                        pictureBox1.Image = b;
+
                     } catch {
 
-                        label1.Text = dict.local["catch_" + lang];
+                        label1.Text = dict.d["catch_" + lang];
 
-                        pictureBox1.Image = themeIsLight ? Resources.LightWarning : Resources.DarkWarning;
+                        pictureBox1.Image = themeIsLight ? Resources.DarkWarning : Resources.LightWarning;
 
-                        await Task.Delay(4000);
-                        Exit();
+                        a = 4000;
                     }
-                }
-
-                async void notify() {
 
                     new SoundPlayer(Resources.Notify).Play();
-                    await Task.Delay(3000);
+                    await Task.Delay(a);
                     Exit();
                 }
 
-                using (var Key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize")) {
+                using (var key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize")) {
 
-                    if (Key?.GetValue("AppsUseLightTheme")?.ToString() != "1") {
+                    if (key?.GetValue("AppsUseLightTheme")?.ToString() != "1") {
 
                         themeIsLight = false;
 
@@ -109,25 +112,12 @@ namespace InternetSwitcher {
 
                 try {
 
-                    if (new Ping().Send("google.com").Status.ToString().Contains("Success")) {
-
-                        cmdline("netsh interface set interface Ethernet disable");
-
-                        label1.Text = dict.local["iOff_" + lang];
-
-                        pictureBox1.Image = themeIsLight ? Resources.DarkError : Resources.LightError;
-
-                        notify();
-                    }
+                    if (new Ping().Send("google.com").Status.ToString().Contains("Success"))
+                        set("disable", dict.d["iOff_" + lang], themeIsLight ? Resources.DarkError : Resources.LightError);
+                    
                 } catch {
 
-                    cmdline("netsh interface set interface Ethernet enable");
-
-                    label1.Text = dict.local["iOn_" + lang];
-
-                    pictureBox1.Image = themeIsLight ? Resources.Dark : Resources.Light;
-
-                    notify();
+                    set("enable", dict.d["iOn_" + lang], themeIsLight ? Resources.Dark : Resources.Light);
                 }
 
                 await Task.Delay(100);
@@ -141,21 +131,12 @@ namespace InternetSwitcher {
                 Close();
         }
 
-        int a(int i) {
-
-            if (ScreenResolution.scaleOfScreen == 100)
-                return i;
-
-            return i * ScreenResolution.scaleOfScreen / 100;
-        }
+        int a(int i) => ScreenResolution.scaleOfScreen == 100 ? i : ScreenResolution.scaleOfScreen / 100;
 
         async void Exit() {
 
             while (Opacity != 0) { Opacity -= 0.2; await Task.Delay(20); }
 
-            Opacity = 0;
-
-            await Task.Delay(70);
             Close();
         }
     }

@@ -9,3 +9,14 @@ C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetSwitcher.cspr
 C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\Internet Switcher.exe
 C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\Internet Switcher.pdb
 C:\Users\yuri\Desktop\Projects\InternetChanger\obj\Release\InternetSwitcher.mainForm.resources
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\bin\Release\Internet Switcher.exe.config
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\bin\Release\Internet Switcher.exe
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\bin\Release\Internet Switcher.pdb
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\InternetSwitcher.csproj.AssemblyReference.cache
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\InternetSwitcher.csproj.SuggestedBindingRedirects.cache
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\InternetSwitcher.mainForm.resources
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\InternetSwitcher.Properties.Resources.resources
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\InternetSwitcher.csproj.GenerateResource.cache
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\InternetSwitcher.csproj.CoreCompileInputs.cache
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\Internet Switcher.exe
+C:\Users\yuri\Desktop\Projects\InternetSwitcher\obj\Release\Internet Switcher.pdb

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Forms;
 
 namespace InternetSwitcher {
@@ -9,15 +8,14 @@ namespace InternetSwitcher {
         public static int scaleOfScreen = 100 * Screen.PrimaryScreen.Bounds.Width / rWidth;
 
 
-        public static int rWidth => Convert.ToInt32(SystemParameters.PrimaryScreenWidth);
+        public static int rWidth => (int)SystemParameters.PrimaryScreenWidth;
 
-        public static int rHeight => Convert.ToInt32(SystemParameters.PrimaryScreenHeight);
+        public static int rHeight => (int)SystemParameters.PrimaryScreenHeight;
 
 
+        public static int wWidth => Screen.PrimaryScreen.Bounds.Width;
 
-        public static int wWidth => Convert.ToInt32(Screen.PrimaryScreen.Bounds.Width);
-
-        public static int wHeight => Convert.ToInt32(Screen.PrimaryScreen.Bounds.Height);
+        public static int wHeight => Screen.PrimaryScreen.Bounds.Height;
 
     }
 }

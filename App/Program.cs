@@ -18,7 +18,7 @@ namespace InternetSwitcher {
 
         static void Exception(object sender, ThreadExceptionEventArgs e) {
 
-            if (MessageBox.Show(dict.local["exp1_" + mainForm.lang] + e.Exception.ToString() + dict.local["exp2_" + mainForm.lang],
+            if (MessageBox.Show(dict.d["exp1_" + mainForm.lang] + "\n" + e.Exception.ToString() + "\n\n" + dict.d["exp2_" + mainForm.lang],
                 "Exception", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     Process.Start("https://github.com/dary1337/InternetSwitcher/issues");
 
